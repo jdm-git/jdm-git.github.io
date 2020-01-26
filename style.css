@@ -30,6 +30,7 @@ input{
     border-radius: 10px;
     outline: none;
     transition: 1s;
+    color: rgba(128, 128, 128, 0.9);
 }
 .btn{
     margin-top: 2vh;
@@ -55,4 +56,16 @@ button:hover{
 input:focus{
     width: 25vw;
     transition: 1s;
+}
+.forecast img{
+    vertical-align: middle;
+    width: 3vw;
+}
+.forecast div{
+    display: inline;
+    margin-left: 2vw;
+}
+.forecast{
+    text-align: center;
+    font-size: 2vw;
 }

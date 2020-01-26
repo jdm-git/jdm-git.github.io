@@ -21,6 +21,18 @@ $.ajax({
         $.getJSON("https://api.openweathermap.org/data/2.5/forecast?q="+location.city+"&lang=pl&appid=2eab94e68e577bc023a653cc6be04573",
         function(forecast){
             console.log(forecast);
+            let weatherName;
+            let temp;
+            let icon;
+            let forecastP = document.getElementById("forecast");
+            console.log(forecast.list[0].weather[0].description);
+            for(let i = 0;i<forecast.list.length;i+=8){
+                temp = Math.round(forecast.list[i].main.temp-273);
+                icon = "https://openweathermap.org/img/wn/"+ forecast.list[i].weather[0].icon + ".png";
+                forecastP.innerHTML+="<div><img src="+icon+">"+temp+"&#8451;</div>";
+
+            }
+
         }
         )
     }
