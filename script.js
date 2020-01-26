@@ -4,11 +4,11 @@ $.ajax({
     jsonpCallback: "callback",
     dataType: "jsonp",
     success: function(location) {
-        $.getJSON("https://crossorigin.me/https://api.openweathermap.org/data/2.5/weather?q="+location.city+"&APPID=2eab94e68e577bc023a653cc6be04573",
+        $.getJSON("https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?q="+location.city+"&APPID=2eab94e68e577bc023a653cc6be04573",
         function(data){
             console.log(data);
         
-            var weatherIcon = "https://crossorigin.me/https://openweathermap.org/img/wn/"+ data.weather[0].icon + ".png";
+            var weatherIcon = "https://cors-anywhere.herokuapp.com/https://openweathermap.org/img/wn/"+ data.weather[0].icon + ".png";
             var temperature = data.main.temp;
             var weather = data.weather[0].main;
             console.log({weatherIcon, temperature, weather});
@@ -23,11 +23,11 @@ $.ajax({
   function checkWeather(){
 
     let city = document.getElementById("cityName").value;
-    $.getJSON("https://crossorigin.me/https://api.openweathermap.org/data/2.5/weather?q="+city+"&APPID=2eab94e68e577bc023a653cc6be04573",
+    $.getJSON("https://cors-anywhere.herokuapp.com/https://api.openweathermap.org/data/2.5/weather?q="+city+"&APPID=2eab94e68e577bc023a653cc6be04573",
     function(data){
         console.log(data);
     
-        var weatherIcon = "https://crossorigin.me/https://openweathermap.org/img/wn/"+ data.weather[0].icon + ".png";
+        var weatherIcon = "https://cors-anywhere.herokuapp.com/https://openweathermap.org/img/wn/"+ data.weather[0].icon + ".png";
         var temperature = data.main.temp;
         var weather = data.weather[0].main;
         
