@@ -4,45 +4,37 @@ $.ajax({
     jsonpCallback: "callback",
     dataType: "jsonp",
     success: function(location) {
-        $.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+location.city+"&APPID=2eab94e68e577bc023a653cc6be04573",
+        $.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+location.city+"&APPID=2eab94e68e577bc023a653cc6be04573",
         function(data){
             console.log(data);
         
-            var weatherIcon = "http://openweathermap.org/img/wn/"+ data.weather[0].icon + ".png";
+            var weatherIcon = "https://openweathermap.org/img/wn/"+ data.weather[0].icon + ".png";
             var temperature = data.main.temp;
             var weather = data.weather[0].main;
-            
-            $('.icon').attr('src', weatherIcon);
-            
-            $(".city").append(location.city);
-
-            $(".temperature").append(Math.round(temperature-273));
-        
-            $(".weather").append(weather);
+            console.log({weatherIcon, temperature, weather});
+            document.getElementById("icon").src=weatherIcon;
+            document.getElementById("temperature").innerHTML = Math.round(temperature-273)+" &#8451;";
+            document.getElementById("weather").innerText = weather;
+            document.getElementById("city").innerText = location.city;
         }
         )
     }
   });
   function checkWeather(){
-      let city = (document.getElementById("cityName").value) ? 
-      document.getElementById("cityName").value : 
-      alert("Brak danych");
 
-    $.getJSON("http://api.openweathermap.org/data/2.5/weather?q="+city+"&APPID=2eab94e68e577bc023a653cc6be04573",
+    let city = document.getElementById("cityName").value;
+    $.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+city+"&APPID=2eab94e68e577bc023a653cc6be04573",
     function(data){
         console.log(data);
     
-        var weatherIcon = "http://openweathermap.org/img/wn/"+ data.weather[0].icon + ".png";
+        var weatherIcon = "https://openweathermap.org/img/wn/"+ data.weather[0].icon + ".png";
         var temperature = data.main.temp;
         var weather = data.weather[0].main;
         
-        document.getElementsByClassName("icon").setAttribute('src',weatherIcon);
-        
-        document.getElementsByClassName("city").innerHTML=city;
-
-        document.getElementsByClassName("temperature").innerHTML=Math.round(temperature-273);
-    
-        document.getElementsByClassName("weather").innerHTML=weather;
+        document.getElementById("icon").src=weatherIcon;
+        document.getElementById("temperature").innerHTML = Math.round(temperature-273)+" &#8451;";
+        document.getElementById("weather").innerText = weather;
+        document.getElementById("city").innerText = city;
     })
   }
   function drawWeather(){
