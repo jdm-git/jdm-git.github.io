@@ -6,15 +6,17 @@
         <title>Weather API</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="script.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
-        <input id="cityName" type="text" placeholder="Wprowadź miejscowość"><button onclick="checkWeather()">Szukaj</button>
         <div class="weather-container">
-            <img id="icon" src="" class="icon">
-            <p id="weather"></p>
-            <p id="city"></p>
-            <p id="temperature"></p>
+           <p><span id="weather"></span>, <span id="city"></span></p>
+            <p><img id="icon" src="" class="icon"><span id="temperature"></span></p>
         </div>
+        <div class="btn">
+            <input id="cityName" type="text" placeholder="Wprowadź miejscowość...">
+            <button onclick="checkWeather()">Szukaj</button>
+        </div>  
     </body>
 
 </html>
