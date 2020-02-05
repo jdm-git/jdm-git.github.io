@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Kółko krzyżyk</title>
+    <link rel=stylesheet href="style.css"/>
+    </head>
+<body>
+    <div id="board">
+        <div style="position: relative; left: -50%;">
+        <div class="row">
+            <div id="0_0" onclick="place(this)"></div>
+            <div id="1_0" onclick="place(this)"></div>
+            <div id="2_0" onclick="place(this)"></div>
+        </div>
+        <div class="row">
+            <div id="0_1" onclick="place(this)"></div>
+            <div id="1_1" onclick="place(this)"></div>
+            <div id="2_1"onclick="place(this)"></div>
+        </div>
+        <div class="row">
+            <div id="0_2" onclick="place(this)"></div>
+            <div id="1_2" onclick="place(this)"></div>
+            <div id="2_2" onclick="place(this)"></div>
+        </div>
+        </div>
+    </div><button id="restartButton" onclick="restart()">Restart the game</button>
+    <span id="winner"></span>
+    <span id="playerTurn">Player O starts</span>
+
+<script src="script.js"></script>
+</body>

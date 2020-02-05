@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: black;
+    color:white;
+    overflow: hidden;
+}
+.row div {
+    padding: 10px;
+    height: 10vw;
+    width: 10vw;
+    float: left;
+    line-height: 10vw;
+    text-align: center;
+    font-size: 8vw;
+    border: 1px solid blue;
+}
+.row {
+    clear: both;
+    border-radius: 15px;
+}
+#playerTurn{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 5vw;
+}
+#board{
+    position: absolute;
+    left: 50%;
+    top:20vh;
+}
+#winner{
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    animation-name: winnerAnimation;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+#restartButton{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: blue;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 15px;
+    color:white;
+    height: 4vh;
+    line-height: 2vh;
+    z-index: 99;
+    font-size: 1vw;
+}
+#restartButton:hover{
+    background-color: white;
+    color: blue;
+    transition: 0.8s;
+}
+@keyframes winnerAnimation {
+    0%{bottom:-50px;}
+    50%{bottom: 5vh;}
+    100%{bottom:10vh;}
+}
