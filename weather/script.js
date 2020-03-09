@@ -25,9 +25,11 @@ $.ajax({
             let temp;
             let icon;
             let forecastP = document.getElementById("forecast");
+            let day;
             console.log(forecast.list[0].weather[0].description);
             for(let i = 0;i<forecast.list.length;i+=8){
                 temp = Math.round(forecast.list[i].main.temp-273);
+                day = forecast.list[i].dt_txt.substring(0,10);
                 icon = "https://openweathermap.org/img/wn/"+ forecast.list[i].weather[0].icon + ".png";
                 forecastP.innerHTML+="<div><img src="+icon+">"+temp+"&#8451;</div>";
 
@@ -74,6 +76,7 @@ function checkForecast(){
     }
     )
 }
-
+var d = new Date(1580936400);
+console.log(d);
 
 

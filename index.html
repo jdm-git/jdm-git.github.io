@@ -1,26 +1,117 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style.css">
+        <title>Portfolio</title>
         <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Weather API</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="script.js"></script>
+        <link rel=stylesheet href="style.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="weather-container">
-           <p><span id="weather"></span>, <span id="city"></span></p>
-            <p><img id="icon" src="" class="icon"><span id="temperature"></span></p>
+        <header>
+        <div class="navbar">
+                <ul>
+                <li><a href="index.html">Portfolio</a></li>
+                <div class="links">
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                 </div>
+            </ul>
         </div>
-        <div class="forecast">
-           Prognoza: <p id="forecast"></p>
+        <div class="bgDiv1"></div>
+            <div class="topic">
+                <p><h1>Jakub Meus</h1></p>
+                <p><h3>Front-end Developer</h3></p>
+            </div>
+        <div class="description">
+            <p>Hi! I'm</p>
+            <p>20 y.o student of Computer Science in WSEI University
+                 and graduate of technical secondary school, in the field of IT.</p>
+                 <p>I want to train as FullStack Developer with particular emphasis on Front-end part</p>
         </div>
-        <div class="btn">
-            <input id="cityName" type="text" placeholder="Wprowadź miejscowość...">
-            <button onclick="checkWeather(); checkForecast()">Szukaj</button>
-        </div>  
-    </body>
+        <div class="more">
+            <a href="#skills"> <p>Check more</p>
+            <i class="arrowDown"></i></a>
+        </div>
+        </header>
+        <div id="skills" class="skills">
+            <h1 class="h">Skills</h1>
+            <div class="tech">
+                <img src="src/js.png"/>
+                <img src="src/css.png"/>
+                <img src="src/html.png"/>
+                
+                <img src="src/sass.png"/>
+                <img src="src/php.png"/>
+                <img src="src/sql.png"/>
+                <img src="src/jq.png"/>
+            </div>
+        </div>
+        <div id="projects">
+            <h1 class="h">Projects</h1>
+            <div class="projects">
+            <div class="project">
+               <img src="src/p1.PNG" alt="project"/>
+               <h2>Noughts and crosses game</h2>
+               <div>
+               <p>Simple game made in JavaScript</p>
+               </div>
+               <button class="demo">View Demo</button>
+               <button class="source">View Source</button>
+               <p class="stack">Using: <span>HTML, CSS3, JavaScript</span></p>
+            </div>
+            <div class="project">
+                <img src="src/p2.PNG" alt="project"/>
+                <h2>Weather forecast app</h2>
+                <div>
+                    <p>Web app connected with OpenWeather API, also used simple geolocation script</p>
+                </div>
+                <button class="demo">View Demo</button>
+                <button class="source">View Source</button>
+                <p class="stack">Using: <span>HTML, JavaScript, JQuery, API</span></p>
+            </div>
+            <div class="project">
+                <img src="src/p1.PNG" alt="project"/>
+                <h2>Somethin somethin...</h2>
+                <div>
 
+                </div>
+                <button class="demo">View Demo</button>
+                <button class="source">View Source</button>
+                <p class="stack">Using: <span></span></p>
+            </div>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+                <h1 class="h">Contact</h1>
+                <div class="form">
+                    <div class="first"><img src="src/ja.png">
+                        <div>
+                        <p><img src="src/mail.png"/>Email: <a href="mailto: m3us.kuba@gmail.com">m3us.kuba@gmail.com</a></p>
+                        <p><img src="src/phone.png"/>Phone: <a href="tel:+48530255846">530 255 846</a></p>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <form action="https://mailthis.to/meuskuba" method="POST"> 
+                            <input type="text" name="name" placeholder="Your name"> 
+                            <input type="email" name="_replyto" placeholder="Your email">
+                            <textarea name="message" placeholder="Enter your message here"></textarea>
+                            <p><input type="submit" value="Send"></p>
+                        </form> 
+                    </div>  
+                </div>
+        </div>
+        <footer>
+            <div>
+            <a href="index.html">Portfolio</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <span>&copy;Jakub Meus</span>
+            </div>
+        </footer>
+    </body>
 </html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather API</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="weather-container">
+           <p><span id="weather"></span>, <span id="city"></span></p>
+            <p><img id="icon" src="" class="icon"><span id="temperature"></span></p>
+        </div>
+        <div class="forecast">
+           Prognoza: <p id="forecast"></p>
+        </div>
+        <div class="btn">
+            <input id="cityName" type="text" placeholder="Wprowadź miejscowość...">
+            <button onclick="checkWeather(); checkForecast()">Szukaj</button>
+        </div>  
+    </body>
+
+</html>
