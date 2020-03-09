@@ -351,6 +351,7 @@ footer{
     background-color: #00adb5;
     width: 100vw;
     font-family: 'Quicksand', sans-serif;
+
 }
 footer div{
     padding-top: 50px;
@@ -391,5 +392,11 @@ footer a:hover{
     }
     .project div{
         height: 100%;
+    }
+    footer div{
+        font-size: 1em;
+    }
+    .first{
+        font-size: 15px;
     }
   }
