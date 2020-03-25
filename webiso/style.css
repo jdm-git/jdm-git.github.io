@@ -276,9 +276,9 @@ html{
         
     }
   }
-  @media only screen and (max-width: 1020px){
+  @media only screen and (max-width: 1024px){
     .navbar{
-        width: 100%;
+        width: 120%;
     }
     .quote{
         font-size: 1em;
@@ -353,6 +353,16 @@ html{
     }
     .carousel-indicators div{
         padding: 5px 15px 5px 15px;
+    }
+  }
+  @media only screen and (max-height: 668px){
+      #car1{
+          margin-top: 40vh;
+      }
+  }
+  @media only screen and (max-height: 568px){
+    #car1{
+        margin-top: 60vh;
     }
   }
 
