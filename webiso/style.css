@@ -1,0 +1,358 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    overflow-x: hidden;
+}
+.row .container{
+    padding-left: 50px;
+    padding-top: 50px;
+}
+.navbar-toggler{ 
+     border: none;
+     padding: 0px;
+}
+.navbar-toggler:focus{
+    outline: none;
+}
+.navbar{
+    width: 50%;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 3px;
+}
+.navbar a{
+    color:#1a1a1d;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.navbar a:hover{
+    color:gray;
+    transition: 0.3s;
+}
+.container img{
+    width: 40px;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+.d-flex{
+    margin-top: 45%;
+}
+.d-flex a{
+    width: 16px;
+}
+.d-flex i{
+    margin-top: 30px;
+    color:black;
+}
+.fa-user{
+    float:right;
+    padding-bottom: 30px;
+    width: 50px;
+    position: relative;
+    bottom: 7px;
+}
+.col-md-6{
+    height: 100vh;
+}
+.col-md-6 .container{
+    width: 80%;
+}
+.bluebox{
+    position: absolute;
+    width: 100px;
+    height: 29px;
+    background-color: #b4d3d3;
+    top:60px;
+    left:60px;
+}
+.logo{
+    box-sizing: border-box;
+}
+.logo h1{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+.d h2{
+    font-size: 33px;
+}
+.d h2::first-letter{
+    font-size: 2.5em;
+    float: left;
+    padding-right: 6px;
+    margin-top: -.15em;
+    
+}
+.text{
+   line-height: 2em;
+   font-size: 16px;
+   font-family: 'Source Sans Pro', sans-serif;
+   color:rgba(0,0, 0, 0.5)
+}
+.quote{
+    background-color: #1a1a1d;
+    color:white;
+    padding-bottom: 50px;
+    position: absolute;
+    bottom: 0px;
+    left: 130px;
+}
+/*
+                            */
+
+.quote div{
+    min-width: max-content;
+    clear: both;
+    margin: 0 auto;
+}
+.quote span{
+    font-style: italic;
+    font-weight: bold;
+}
+.quote .container{
+    width: 55%;
+    margin: 0 auto;
+}
+.quote{
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+/*Carousel*/
+
+.carousel {
+  width: 100%;
+}
+#car1{
+    margin-top: 20vh;
+}
+.slide-box {
+  display: flex;
+  justify-content: flex-start;
+}
+.slide-box .slide-item{
+    width: 20vw;
+    height: 350px;
+    background-color: #e2e8e8;
+}
+.slide-box .slide-item:nth-child(2){
+    background-color: #d3dcdc;
+}
+.slide-box .slide-item:nth-child(3){
+    background-color: #030409;
+}
+.slide-box .slide-item:nth-child(4){
+    background-color: #d3dcdc;
+}
+.carousel-indicators{
+    position: relative;
+    width: 100%;
+    bottom: 50px;
+}
+.carousel-indicators div{
+    padding: 10px 40px 10px 40px;
+    font-size: 22px;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+}
+.carousel-indicators .active{
+    border-bottom: 1px solid black;
+}
+.fa-arrow-left,.fa-arrow-right{
+    position: relative;
+    bottom: 190px;
+    cursor: pointer;
+}
+.fa-arrow-left{
+    left:-10%
+}
+.fa-arrow-right{
+    left:100%;
+}
+.person{
+    text-align: center;
+    color:white;
+    vertical-align: bottom;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.person h3{
+    margin-top: 250px;
+}
+.person .arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #b4d3d3;
+    float: right;
+    margin: 10px 10px 0px 0px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow i{
+    transform: rotate(-45deg);
+    margin: 0 auto;
+}
+.person h5{
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .slide-box .slide-item{
+        width: 25vw;
+        height: 200px;
+    }
+    .carousel-indicators div{
+        padding: 5px 20px 5px 20px;
+        font-size: 15px;
+    }
+    .fas{
+        bottom: 120px;
+    }
+  }
+
+
+  /* footer  */
+  footer{
+      margin-top: 100px;
+  }
+.container-fluid .row{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px 0px 40px;
+    align-items: baseline;
+}
+.l{
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+}
+  .newsletter{
+    text-transform: uppercase;
+    padding: 5px 40px 5px 40px;
+    border-left: 1px solid #b4d3d3;
+  }
+  .container-fluid hr{
+      width: 100%;
+      margin: 0 auto;
+      border-color: #f7f7f7;
+      margin-top: 40px;
+  }
+  .media a{
+      padding-left: 40px;
+      color: #1a1a1d;
+  }
+
+
+
+  /* media */
+  @media only screen and (max-width: 1850px) {
+    .col{
+        display: none;
+    }
+    .bluebox{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 1450px){
+      .navbar{
+          width: 80%;
+      }
+      .d h2{
+          font-size: 1.5em;
+      }
+      .fa-arrow-left{
+        position: absolute;
+        left: 20px;
+    }
+    .fa-arrow-right{
+        position: absolute;
+        right: 20px;
+        
+    }
+  }
+  @media only screen and (max-width: 1020px){
+    .navbar{
+        width: 100%;
+    }
+    .quote{
+        font-size: 1em;
+        left: 80px;
+        height: 10%;
+    }
+    .quote div{
+        position: relative;
+        bottom: 20px;
+    }
+  }
+  @media only screen and (max-width: 850px){
+      .d h2{
+          font-size: 1em;
+      }
+      .d h2::first-letter{
+          font-size: 3em;
+      }
+      .text{
+          font-size: 14px;
+      }
+      .navbar{
+          width: 120%;
+      }
+  }
+  @media only screen and (max-width: 768px){
+      .navbar{
+          width: 80%;
+      }
+      .person h3{
+        margin-top: 90px;
+        font-size: 0.8em;
+      }
+      .person h5{
+          font-size: 0.5em;
+      }
+      .text{
+        word-wrap: break-word;
+      }
+      .fa-arrow-right{
+          left: 90%;
+      }
+      .fa-arrow-left{
+          left: 10%;
+      }
+  }
+  @media only screen and (max-width: 570px){
+    .quote{
+        display: none;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .col-md-6{
+        width: 100%;
+    }
+    footer{
+        font-size: 0.8em;
+    }
+    .l{
+        font-size: 15px;
+    }
+    .newsletter{
+        font-size: 10px;
+        padding: 5px 15px 5px 15px;
+    }
+    .media{
+        margin-top: 30px;
+    }
+    #car1{
+        margin-top: 20vh;
+    }
+    .carousel-indicators div{
+        padding: 5px 15px 5px 15px;
+    }
+  }
+
