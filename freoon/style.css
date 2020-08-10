@@ -6,6 +6,9 @@ body {
   main{
     margin-top: 100px;
   }
+  header a{
+    color:white;
+  }
   .topic{
       margin: 0 auto;
       width: 70%;
@@ -57,6 +60,12 @@ body {
   .article{
       display: flex;
       margin-bottom: 50px;
+  }
+  .latest a{
+    color:black;
+  }
+  .latest a:hover{
+    color:rgb(209, 6, 6);
   }
   .trending{
     width: 70%;
@@ -110,12 +119,53 @@ body {
     padding: 5px;
     margin-bottom: 20px;
   }
+  .post a{
+    color:black;
+  }
   .post img{
     width: 100%;
   }
   .post .author{
     font-size: smaller;
   }
+.fa-facebook-square{
+  color:rgb(9, 107, 219);
+}
+.fa-instagram{
+  color:rgb(192, 4, 192);
+}
+.fa-youtube{
+  color:rgb(209, 6, 6);
+}
+.fa-twitch{
+  color: purple;
+}
+.media{
+  margin: 10px 50px;
+  width: 30%;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(204, 204, 204);
+}
+.logo{
+  margin: 0 auto;
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+}
+.item iframe{
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+}
+.left .podcast{
+  color:white;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
 
 
 
@@ -136,6 +186,7 @@ body {
     }
     .left{
       width: 100%;
+      margin-bottom: 20px;
     }
     .topic{
       flex-wrap: wrap;
@@ -175,10 +226,10 @@ body {
       width: 100%;
     }
     .description{
-      font-size: 0.5em;
+      font-size: smaller;
     }
     .post{
       width: 45%;
+      font-size: small;
     }
   }
-  s
